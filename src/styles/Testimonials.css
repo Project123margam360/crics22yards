@@ -1,71 +1,100 @@
 .testimonials-section {
   width: 100%;
   padding: 80px 40px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  background: #f5f7fa;
 }
 
 .testimonials-section h2 {
   text-align: center;
-  font-size: 42px;
-  font-weight: 600;
-  margin-bottom: 60px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
   color: #131416;
+}
+
+.events-subtitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #131416;
+  margin-bottom: 30px;
+}
+
+.events-description {
+  text-align: center;
+  font-size: 16px;
+  color: #656A74;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  line-height: 1.5;
 }
 
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  gap: 40px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-.testimonial-card {
+.event-card {
   background: #ffffff;
-  padding: 30px;
+  padding: 0;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #D7AF43;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 3px solid #D7AF43;
   transition: all 0.3s ease;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
-.testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(215, 175, 67, 0.2);
 }
 
 .testimonial-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 100%;
+  height: 250px;
   object-fit: cover;
-  margin-bottom: 20px;
-  border: 3px solid #D7AF43;
+  display: block;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
 }
 
-.testimonial-text {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #656A74;
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-.testimonial-author {
-  font-size: 16px;
+.event-card h3 {
+  font-size: 28px;
   font-weight: 700;
-  color: #131416;
-  margin-bottom: 5px;
+  color: #00529C;
+  padding: 24px 24px 12px;
+  margin-bottom: 0;
 }
 
+.event-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #656A74;
+  padding: 12px 24px 24px;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.testimonial-text,
+.testimonial-author,
 .testimonial-title {
-  font-size: 14px;
-  color: #00529C;
-  font-weight: 600;
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .testimonials-section h2 {
+    font-size: 38px;
+  }
+
+  .events-subtitle {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -75,55 +104,74 @@
 
   .testimonials-section h2 {
     font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .events-subtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .events-description {
+    font-size: 14px;
     margin-bottom: 40px;
   }
 
-  .testimonial-card {
-    padding: 25px;
+  .testimonials-grid {
+    gap: 30px;
   }
 
   .testimonial-image {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 16px;
+    height: 200px;
+  }
+
+  .event-card h3 {
+    font-size: 24px;
+    padding: 20px 20px 10px;
+  }
+
+  .event-description {
+    font-size: 14px;
+    padding: 10px 20px 20px;
   }
 }
 
 @media (max-width: 480px) {
   .testimonials-section {
-    padding: 30px 12px;
+    padding: 40px 16px;
   }
 
   .testimonials-section h2 {
-    font-size: 22px;
-    margin-bottom: 24px;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .events-subtitle {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .events-description {
+    font-size: 13px;
+    margin-bottom: 32px;
   }
 
   .testimonials-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .testimonial-card {
-    padding: 20px 16px;
+    gap: 24px;
   }
 
   .testimonial-image {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 12px;
+    height: 180px;
   }
 
-  .testimonial-text {
+  .event-card h3 {
+    font-size: 20px;
+    padding: 16px 16px 8px;
+  }
+
+  .event-description {
     font-size: 13px;
-    margin-bottom: 12px;
-  }
-
-  .testimonial-author {
-    font-size: 14px;
-  }
-
-  .testimonial-title {
-    font-size: 12px;
+    padding: 8px 16px 16px;
   }
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
+import logo from '../assets/10007.png';
 
 export default function Header() {
   const [dropMenuOpen, setDropMenuOpen] = useState(false);
@@ -16,21 +17,25 @@ export default function Header() {
   return (
     <header className="site-header">
       <nav className="navbar">
+        <div className="logo-container">
+          <img src={logo} alt="Crics 22 Yards" className="logo" />
+        </div>
         <button className="hamburger" onClick={toggleMobileMenu}>
           <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
           <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
           <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
         </button>
         <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+          <a href="#home">Home</a>
+          <a href="#gallery">Gallery</a>
           <a href="#about">About Us</a>
           <a href="#coaching">Coaching</a>
-          <a href="#rentals">Lane Rentals</a>
-          <a href="#events">Special Events</a>
-          <a href="#registration">Registration</a>
+          <a href="#events">Lane Rentals</a>
+          <a href="#special-events">Special Events</a>
           <a href="#contact">Contact Us</a>
         </div>
         <div className="drop-wrap">
-          <button className="book-btn" onClick={toggleDrop}>
+          <button className={`book-btn ${dropMenuOpen ? 'open' : ''}`} onClick={toggleDrop}>
             Book Now
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

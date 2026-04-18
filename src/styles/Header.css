@@ -25,6 +25,18 @@
   justify-content: space-between;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -114,32 +126,33 @@
 }
 
 .drop-menu {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  min-width: 200px;
+  min-width: 240px;
   background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
+  border: 2px solid #00529C;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   z-index: 200;
 }
 
 .drop-menu a {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 16px;
-  font-size: 13px;
+  gap: 14px;
+  padding: 14px 16px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.5px;
   color: #1a1a1a;
   text-decoration: none;
   border-bottom: 1px solid #f0f0f0;
-  transition: background 0.12s;
+  transition: background 0.2s ease;
 }
 
 .drop-menu a:last-child {
@@ -147,12 +160,17 @@
 }
 
 .drop-menu a:hover {
-  background: #fff8e0;
+  background: #f5f5f5;
 }
 
 .drop-menu a svg {
-  color: #f5c400;
   flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  background: #f5c400;
+  padding: 6px;
+  border-radius: 4px;
+  color: #1a1a1a;
 }
 
 @media (max-width: 768px) {

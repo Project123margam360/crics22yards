@@ -1,41 +1,39 @@
 import React from 'react';
 import '../styles/Testimonials.css';
-import coachImage1 from '../assets/10011.jpg';
-import coachImage2 from '../assets/10006.jpg';
-import coachImage3 from '../assets/10041.png';
+import eventImage1 from '../assets/10045.webp';
+import eventImage2 from '../assets/corporate.webp';
+import eventImage3 from '../assets/10010.webp';
 
 export default function Testimonials() {
-  const testimonials = [
+  const events = [
     {
-      name: 'Amit Patel',
-      title: 'Cricket Player',
-      text: 'The facilities here are world-class and the coaching staff is incredibly knowledgeable. I\'ve improved my game significantly!',
-      image: coachImage1
+      title: 'Birthday Parties',
+      description: 'Celebrate in style with a cricket-themed birthday party! Our facility is perfect for guests of all ages, offering fun cricket activities and games that make every birthday a hit.',
+      image: eventImage1
     },
     {
-      name: 'Priya Singh',
-      title: 'Parent',
-      text: 'My son loves coming here. The coaches are patient and create a fun, engaging learning environment.',
-      image: coachImage2
+      title: 'Corporate Events',
+      description: 'Build team spirit with a corporate event at our cricket facility. Whether it\'s a team-building exercise or a company-wide outing, we provide a unique environment that fosters camaraderie and friendly competition.',
+      image: eventImage2
     },
     {
-      name: 'Rajesh Kumar',
-      title: 'Team Coach',
-      text: 'Best cricket facility in Ohio. The equipment is top-notch and the staff is always helpful and professional.',
-      image: coachImage3
+      title: 'Tournaments',
+      description: 'Host or participate in local and regional cricket tournaments at our state-of-the-art facility. Ideal for showcasing talent and competing at various levels, our tournaments are a thrilling experience for players and spectators alike.',
+      image: eventImage3
     }
   ];
 
   return (
-    <section className="testimonials-section">
-      <h2>What Our Members Say</h2>
+    <section id="special-events" className="testimonials-section">
+      <h2>Special Events at Crics 22Yards Columbus</h2>
+      <p className="events-subtitle">Prime Choice for Birthday Parties, Corporate Events, and Sporting Events!</p>
+      <p className="events-description">Transform your celebrations and team-building events into unforgettable experiences at Crics 22Yards Columbus. Our facility provides a unique setting that combines sport and fun, making every event memorable. Here's what we offer:</p>
       <div className="testimonials-grid">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="testimonial-card">
-            <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
-            <p className="testimonial-text">"{testimonial.text}"</p>
-            <p className="testimonial-author">{testimonial.name}</p>
-            <p className="testimonial-title">{testimonial.title}</p>
+        {events.map((event, index) => (
+          <div key={index} className="testimonial-card event-card">
+            <img src={event.image} alt={event.title} className="testimonial-image" />
+            <h3>{event.title}</h3>
+            <p className="event-description">{event.description}</p>
           </div>
         ))}
       </div>

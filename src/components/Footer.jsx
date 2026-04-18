@@ -1,36 +1,134 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Footer.css';
+import bgImage from '../assets/10032.webp';
 
 export default function Footer() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    gender: 'Male',
+    activity: '',
+    notes: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+    // Reset form
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      gender: 'Male',
+      activity: '',
+      notes: ''
+    });
+  };
+
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-section">
-          <h3>Contact Us</h3>
-          <p>📍 9525 OH-161, Plain City, OH 43064</p>
-          <p>📧 contact@crics22yards.com</p>
-          <p>📱 (737) 323 0270</p>
+    <section id="contact" className="registration-section" style={{ backgroundImage: `url(${bgImage})` }}>
+      <div className="registration-container">
+        <div className="registration-content">
+          <p className="register-label">Register Now</p>
+          <h2>Get Started at Crics 22Yards Columbus Today!</h2>
+          <p className="registration-description">
+            Ready to take your cricket game to the next level? Whether you're looking to rent a lane for solo practice or enroll in one of our expert-led coaching programs, Crics 22Yards Columbus is the place to be. Fill out the form below to get more information and start your journey to cricket excellence!
+          </p>
         </div>
-        <div className="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#coaching">Coaching</a></li>
-            <li><a href="#rentals">Lane Rentals</a></li>
-            <li><a href="#registration">Registration</a></li>
-          </ul>
-        </div>
-        <div className="footer-section">
-          <h3>Follow Us</h3>
-          <div className="social-links">
-            <a href="https://facebook.com/crics22yards/" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://instagram.com/crics22yards/" target="_blank" rel="noopener noreferrer">Instagram</a>
+
+        <form className="registration-form" onSubmit={handleSubmit}>
+          <div className="form-row">
+            <div className="form-group">
+              <label>First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                placeholder=""
+              />
+            </div>
+            <div className="form-group">
+              <label>Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                placeholder=""
+              />
+            </div>
           </div>
-        </div>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder=""
+              />
+            </div>
+            <div className="form-group">
+              <label>Phone</label>
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder=""
+              />
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label>Gender</label>
+              <select name="gender" value={formData.gender} onChange={handleChange}>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div className="form-group">
+              <label>Activity</label>
+              <input
+                type="text"
+                name="activity"
+                value={formData.activity}
+                onChange={handleChange}
+                placeholder=""
+              />
+            </div>
+          </div>
+
+          <div className="form-group full-width">
+            <label>Notes</label>
+            <textarea
+              name="notes"
+              value={formData.notes}
+              onChange={handleChange}
+              placeholder=""
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button type="submit" className="submit-btn">REGISTER NOW</button>
+        </form>
       </div>
-      <div className="footer-bottom">
-        <p>&copy; 2026 Crics 22Yards Columbus. All rights reserved.</p>
-      </div>
-    </footer>
+    </section>
   );
 }

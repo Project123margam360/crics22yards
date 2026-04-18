@@ -1,39 +1,28 @@
 import React from 'react';
 import '../styles/Services.css';
-import facilityImage1 from '../assets/10023.webp';
-import facilityImage2 from '../assets/10026.jpg';
-import facilityImage3 from '../assets/10021.jpeg';
+import facilityImage from '../assets/10031.webp';
 
 export default function Services() {
-  const services = [
-    {
-      title: 'Lane Rentals',
-      description: 'Book a private or semi-private lane for your cricket practice sessions with full equipment access.',
-      image: facilityImage1
-    },
-    {
-      title: 'Professional Coaching',
-      description: 'Learn from experienced cricket coaches in personalized 1-on-1 and group sessions.',
-      image: facilityImage2
-    },
-    {
-      title: 'Membership Programs',
-      description: 'Get unlimited access to our facilities with flexible membership options for all levels.',
-      image: facilityImage3
-    }
-  ];
+  const handleBookLane = () => {
+    document.getElementById('rentals')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleEnrollCoaching = () => {
+    document.getElementById('coaching')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <section id="services" className="services-section">
-      <h2>Our Services</h2>
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <div key={index} className="service-card">
-            <img src={service.image} alt={service.title} className="service-image" />
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-          </div>
-        ))}
+    <section id="events" className="services-section" style={{ backgroundImage: `url(${facilityImage})` }}>
+      <div className="services-overlay"></div>
+      <div className="services-content">
+        <h2>Start Your Cricket Journey with Crics 22Yards Columbus</h2>
+        <p>
+          Whether you're looking to refine your skills in a professional setting or seeking expert guidance to take your game to the next level, Crics 22Yards Columbus has you covered. Choose from our tailored options to best suit your cricketing needs.
+        </p>
+        <div className="services-buttons">
+          <button className="btn btn-primary" onClick={handleBookLane}>BOOK A LANE +</button>
+          <button className="btn btn-secondary" onClick={handleEnrollCoaching}>ENROLL FOR COACHING 📋</button>
+        </div>
       </div>
     </section>
   );
