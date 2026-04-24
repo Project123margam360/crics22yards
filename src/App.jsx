@@ -1,38 +1,22 @@
 import React from 'react'
-import TopBar from './components/TopBar'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import WhatsNew from './components/WhatsNew'
-import About from './components/About'
-import Stats from './components/Stats'
-import Mission from './components/Mission'
-import Programs from './components/Programs'
-import Facilities from './components/Facilities'
-import Coaches from './components/Coaches'
-import Services from './components/Services'
-import Testimonials from './components/Testimonials'
-import Footer from './components/Footer'
-import BottomFooter from './components/BottomFooter'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import MainLayout from './layouts/MainLayout'
+import HomePage from './pages/HomePage'
+import AboutUsPage from './pages/AboutUsPage'
+import CoachingPage from './pages/CoachingPage'
 import './App.css'
 
 function App() {
   return (
-    <>
-      <TopBar />
-      <Header />
-      <Hero />
-      <WhatsNew />
-      <About />
-      <Stats />
-      <Mission />
-      <Programs />
-      <Facilities />
-      <Coaches />
-      <Services />
-      <Testimonials />
-      <Footer />
-      <BottomFooter />
-    </>
+    <Router>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/coaching" element={<CoachingPage />} />
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 

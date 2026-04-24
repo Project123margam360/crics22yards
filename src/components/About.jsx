@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import cricketField from '../assets/10008.webp';
 
@@ -41,7 +42,7 @@ export default function About() {
             </p>
           </div>
 
-          <button className="about-button">More About Us</button>
+          <Link to="/about" className="about-button">More About Us</Link>
         </div>
       </div>
     </section>

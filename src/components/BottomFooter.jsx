@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/BottomFooter.css';
 import logo from '../assets/10007.png';
 
@@ -40,9 +41,9 @@ export default function BottomFooter() {
           <div className="links-column">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#coaching">Coaching</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/coaching">Coaching</Link></li>
               <li><a href="#events">Lane Rentals</a></li>
               <li><a href="#special-events">Special Events</a></li>
               <li><a href="#gallery">Gallery</a></li>

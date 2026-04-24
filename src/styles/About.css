@@ -134,6 +134,8 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .about-button:hover {

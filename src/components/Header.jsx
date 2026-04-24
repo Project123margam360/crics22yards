@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 import logo from '../assets/10007.png';
 
@@ -14,25 +15,29 @@ export default function Header() {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="site-header">
       <nav className="navbar">
-        <div className="logo-container">
+        <Link to="/" className="logo-container" aria-label="Home">
           <img src={logo} alt="Crics 22 Yards" className="logo" />
-        </div>
+        </Link>
         <button className="hamburger" onClick={toggleMobileMenu}>
           <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
           <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
           <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
         </button>
         <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-          <a href="#home">Home</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#about">About Us</a>
-          <a href="#coaching">Coaching</a>
-          <a href="#events">Lane Rentals</a>
-          <a href="#special-events">Special Events</a>
-          <a href="#contact">Contact Us</a>
+          <Link to="/" onClick={closeMobileMenu}>Home</Link>
+          <Link to="/about" onClick={closeMobileMenu}>About Us</Link>
+          <Link to="/coaching" onClick={closeMobileMenu}>Coaching</Link>
+          <a href="#gallery" onClick={closeMobileMenu}>Gallery</a>
+          <a href="#events" onClick={closeMobileMenu}>Lane Rentals</a>
+          <a href="#special-events" onClick={closeMobileMenu}>Special Events</a>
+          <a href="#contact" onClick={closeMobileMenu}>Contact Us</a>
         </div>
         <div className="drop-wrap">
           <button className={`book-btn ${dropMenuOpen ? 'open' : ''}`} onClick={toggleDrop}>
