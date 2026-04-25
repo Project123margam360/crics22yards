@@ -34,9 +34,8 @@ export default function Header() {
           <Link to="/" onClick={closeMobileMenu}>Home</Link>
           <Link to="/about" onClick={closeMobileMenu}>About Us</Link>
           <Link to="/coaching" onClick={closeMobileMenu}>Coaching</Link>
-          <a href="#gallery" onClick={closeMobileMenu}>Gallery</a>
-          <a href="#events" onClick={closeMobileMenu}>Lane Rentals</a>
-          <a href="#special-events" onClick={closeMobileMenu}>Special Events</a>
+          <Link to="/lane-rentals" onClick={closeMobileMenu}>Lane Rentals</Link>
+          <Link to="/special-events" onClick={closeMobileMenu}>Special Events</Link>
           <a href="#contact" onClick={closeMobileMenu}>Contact Us</a>
         </div>
         <div className="drop-wrap">

@@ -1,0 +1,160 @@
+.corporate-events-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 40px;
+}
+
+.corporate-events-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: flex-start;
+  position: relative;
+}
+
+.corporate-image-wrapper {
+  width: 100%;
+  overflow: visible;
+  border-radius: 12px;
+  order: 2;
+}
+
+.corporate-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.corporate-content {
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08), 
+              8px 0 16px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: relative;
+  margin-right: -60px;
+  z-index: 2;
+  order: 1;
+}
+
+.corporate-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #D7AF43;
+  margin: 0 0 12px 0;
+  line-height: 1.1;
+}
+
+.corporate-description {
+  font-size: 16px;
+  line-height: 1.3;
+  color: #888888;
+  margin: 0 0 20px 0;
+}
+
+.features-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 15px 0;
+  line-height: 1;
+}
+
+.features-list {
+  list-style: disc;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.features-list li {
+  font-size: 15px;
+  line-height: 1.2;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.features-list li strong {
+  color: #00529C;
+  font-weight: 600;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .corporate-events-section {
+    padding: 60px 30px;
+  }
+
+  .corporate-events-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .corporate-image-wrapper {
+    order: 1;
+  }
+
+  .corporate-content {
+    order: 2;
+    padding: 30px;
+    margin-right: 0;
+  }
+
+  .corporate-title {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+
+  .corporate-description {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .features-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .features-list li {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .corporate-events-section {
+    padding: 50px 20px;
+  }
+
+  .corporate-events-container {
+    gap: 30px;
+  }
+
+  .corporate-content {
+    padding: 25px;
+  }
+
+  .corporate-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .corporate-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .features-heading {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .features-list li {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+}

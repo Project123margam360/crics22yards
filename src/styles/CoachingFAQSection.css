@@ -10,7 +10,7 @@
 }
 
 .coaching-faq-heading {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 700;
   color: #131416;
   text-align: center;
@@ -19,21 +19,21 @@
 }
 
 .coaching-faq-subtitle {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   color: #131416;
   text-align: center;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
   line-height: 1.2;
 }
 
 .coaching-faq-description {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   color: #666666;
   text-align: center;
-  margin: 0 0 60px 0;
-  max-width: 1000px;
+  margin: 0 0 50px 0;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,73 +42,68 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
 .coaching-faq-item {
-  border: 1px solid #e0e0e0;
-}
-
-.coaching-faq-item.expanded {
-  background-color: #00529C;
-  border-color: #00529C;
+  border-radius: 0;
+  overflow: hidden;
 }
 
 .coaching-faq-question {
   width: 100%;
-  padding: 25px 30px;
-  background: transparent;
+  background: #f5f5f5;
   border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px;
   font-size: 18px;
   font-weight: 600;
   color: #131416;
   text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   transition: all 0.3s ease;
 }
 
-.coaching-faq-item.expanded .coaching-faq-question {
-  color: #D7AF43;
+.coaching-faq-question:hover {
+  background: #eeeeee;
+  border-bottom-color: #eeeeee;
 }
 
-.coaching-faq-item.expanded .coaching-faq-question span:last-child {
-  color: #ffffff;
+.coaching-faq-question.active {
+  background: #00529C;
+  color: #D7AF43;
+  border-bottom-color: #00529C;
 }
 
 .coaching-faq-icon {
-  flex-shrink: 0;
-  font-size: 14px;
-  color: #131416;
-  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+  color: currentColor;
 }
 
-.coaching-faq-item.expanded .coaching-faq-icon {
-  color: #ffffff;
+.coaching-faq-question.active .coaching-faq-icon {
+  transform: rotate(180deg);
 }
 
 .coaching-faq-answer {
-  padding: 0 30px 30px 30px;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.8;
+  background: #f5f5f5;
+  padding: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.coaching-faq-item:last-child .coaching-faq-question,
+.coaching-faq-item:last-child .coaching-faq-answer {
+  border-bottom: none;
 }
 
 .coaching-faq-answer p {
-  margin: 0 0 15px 0;
-  color: #ffffff;
-}
-
-.coaching-faq-answer p:last-child {
-  margin-bottom: 0;
-}
-
-.coaching-faq-answer p:first-child {
-  margin-top: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666666;
+  margin: 0;
+  font-weight: 500;
+  text-align: left;
 }
 
 /* Tablet */
@@ -118,28 +113,22 @@
   }
 
   .coaching-faq-heading {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 36px;
   }
 
   .coaching-faq-subtitle {
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 28px;
   }
 
   .coaching-faq-description {
-    font-size: 16px;
-    margin-bottom: 50px;
+    font-size: 15px;
+    margin-bottom: 40px;
   }
 
   .coaching-faq-question {
-    padding: 20px 25px;
     font-size: 16px;
-  }
-
-  .coaching-faq-answer {
-    padding: 0 25px 25px 25px;
-    font-size: 15px;
+    padding: 18px;
+    border-bottom: 1px solid #eeeeee;
   }
 }
 
@@ -149,33 +138,46 @@
     padding: 40px 20px;
   }
 
+  .coaching-faq-container {
+    max-width: 100%;
+  }
+
   .coaching-faq-heading {
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .coaching-faq-subtitle {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 20px;
   }
 
   .coaching-faq-description {
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+
+  .coaching-faq-list {
+    gap: 0;
   }
 
   .coaching-faq-question {
-    padding: 18px 20px;
-    font-size: 15px;
-    gap: 15px;
+    font-size: 14px;
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
   }
 
   .coaching-faq-answer {
-    padding: 0 20px 20px 20px;
-    font-size: 14px;
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .coaching-faq-answer p {
+    font-size: 13px;
   }
 
   .coaching-faq-icon {
-    font-size: 12px;
+    width: 18px;
+    height: 18px;
   }
 }
