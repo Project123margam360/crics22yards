@@ -47,7 +47,7 @@ export default function BottomFooter() {
               <li><Link to="/lane-rentals">Lane Rentals</Link></li>
               <li><a href="#special-events">Special Events</a></li>
               <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><Link to="/contact-us">Contact Us</Link></li>
             </ul>
           </div>
 

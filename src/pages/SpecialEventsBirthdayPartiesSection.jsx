@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/SpecialEventsBirthdayPartiesSection.css';
-import birthdayImage from '../assets/10045.webp';
+import birthdayImage1 from '../assets/10045.webp';
+import birthdayImage2 from '../assets/bday2.webp';
 
 export default function SpecialEventsBirthdayPartiesSection() {
   const features = [
@@ -26,7 +27,8 @@ export default function SpecialEventsBirthdayPartiesSection() {
     <section className="birthday-parties-section">
       <div className="birthday-parties-container">
         <div className="birthday-image-wrapper">
-          <img src={birthdayImage} alt="Birthday Party at Crics 22Yards" className="birthday-image" />
+          <img src={birthdayImage2} alt="Birthday Celebration" className="birthday-image birthday-image-1" />
+          <img src={birthdayImage1} alt="Birthday Party at Crics 22Yards" className="birthday-image birthday-image-2" />
         </div>
         
         <div className="birthday-content">

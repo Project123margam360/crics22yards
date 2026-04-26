@@ -7,6 +7,7 @@ import AboutUsPage from './pages/AboutUsPage'
 import CoachingPage from './pages/CoachingPage'
 import LaneRentalsPage from './pages/LaneRentalsPage'
 import SpecialEventsPage from './pages/SpecialEventsPage'
+import ContactUsPage from './pages/ContactUsPage'
 import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/coaching" element={<CoachingPage />} />
           <Route path="/lane-rentals" element={<LaneRentalsPage />} />
           <Route path="/special-events" element={<SpecialEventsPage />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
         </Route>
       </Routes>
     </Router>

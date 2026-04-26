@@ -1,10 +1,10 @@
-.birthday-parties-section {
+.tournaments-section {
   width: 100%;
   background: #ffffff;
   padding: 80px 40px;
 }
 
-.birthday-parties-container {
+.tournaments-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -14,14 +14,14 @@
   position: relative;
 }
 
-.birthday-image-wrapper {
+.tournaments-image-wrapper {
   width: 100%;
   position: relative;
   order: 1;
   height: 550px;
 }
 
-.birthday-image {
+.tournaments-image {
   width: 100%;
   display: block;
   object-fit: cover;
@@ -29,7 +29,7 @@
   position: absolute;
 }
 
-.birthday-image-1 {
+.tournaments-image-1 {
   top: 0;
   left: 0;
   z-index: 1;
@@ -37,7 +37,7 @@
   height: 420px;
 }
 
-.birthday-image-2 {
+.tournaments-image-2 {
   bottom: 0;
   right: 0;
   z-index: 2;
@@ -45,7 +45,7 @@
   height: 350px;
 }
 
-.birthday-content {
+.tournaments-content {
   padding: 40px;
   background: #ffffff;
   border-radius: 12px;
@@ -59,7 +59,7 @@
   text-align: left;
 }
 
-.birthday-title {
+.tournaments-title {
   font-size: 52px;
   font-weight: 700;
   color: #D7AF43;
@@ -67,7 +67,7 @@
   line-height: 1.1;
 }
 
-.birthday-description {
+.tournaments-description {
   font-size: 16px;
   line-height: 1.3;
   color: #888888;
@@ -102,32 +102,32 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .birthday-parties-section {
+  .tournaments-section {
     padding: 60px 30px;
   }
 
-  .birthday-parties-container {
+  .tournaments-container {
     grid-template-columns: 1fr;
     gap: 50px;
     align-items: center;
   }
 
-  .birthday-image-wrapper {
+  .tournaments-image-wrapper {
     order: 1;
   }
 
-  .birthday-content {
+  .tournaments-content {
     order: 2;
     padding: 30px;
     margin-left: 0;
   }
 
-  .birthday-title {
+  .tournaments-title {
     font-size: 44px;
     margin-bottom: 20px;
   }
 
-  .birthday-description {
+  .tournaments-description {
     font-size: 15px;
     margin-bottom: 25px;
   }
@@ -144,31 +144,35 @@
 
 /* Mobile */
 @media (max-width: 480px) {
-  .birthday-parties-section {
+  .tournaments-section {
     padding: 50px 20px;
   }
 
-  .birthday-parties-container {
+  .tournaments-container {
     gap: 30px;
   }
 
-  .birthday-title {
-    font-size: 32px;
-    margin-bottom: 20px;
+  .tournaments-content {
+    padding: 25px;
   }
 
-  .birthday-description {
+  .tournaments-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .tournaments-description {
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .features-heading {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .features-list li {
     font-size: 13px;
-    margin-bottom: 14px;
+    margin-bottom: 4px;
   }
 }

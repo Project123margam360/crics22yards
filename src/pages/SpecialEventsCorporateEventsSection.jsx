@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/SpecialEventsCorporateEventsSection.css';
-import corporateImage from '../assets/10043.jpg';
+import corporateImage from '../assets/corp.jpg';
 
 export default function SpecialEventsCorporateEventsSection() {
   const features = [

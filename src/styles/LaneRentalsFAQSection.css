@@ -53,7 +53,6 @@
   font-size: 18px;
   font-weight: 500;
   color: #1a1a1a;
-  transition: all 0.3s ease;
   text-align: left;
 }
 
@@ -77,8 +76,11 @@
 }
 
 .faq-answer {
-  padding: 0 0 25px 20px;
-  animation: slideDown 0.3s ease;
+  padding: 20px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #eeeeee;
+  animation: slideDown 0.6s ease-out;
+  overflow: hidden;
 }
 
 .faq-answer p {
@@ -90,12 +92,12 @@
 
 @keyframes slideDown {
   from {
-    opacity: 0;
     max-height: 0;
+    transform: translateY(-10px);
   }
   to {
-    opacity: 1;
     max-height: 500px;
+    transform: translateY(0);
   }
 }
 
