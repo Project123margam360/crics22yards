@@ -8,6 +8,7 @@ import CoachingPage from './pages/CoachingPage'
 import LaneRentalsPage from './pages/LaneRentalsPage'
 import SpecialEventsPage from './pages/SpecialEventsPage'
 import ContactUsPage from './pages/ContactUsPage'
+import RegistrationPage from './pages/RegistrationPage'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/lane-rentals" element={<LaneRentalsPage />} />
           <Route path="/special-events" element={<SpecialEventsPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route path="/register" element={<RegistrationPage />} />
         </Route>
       </Routes>
     </Router>
