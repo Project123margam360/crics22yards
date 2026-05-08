@@ -23,3 +23,16 @@
   margin: 0;
   padding: 0;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .registration-form-wrapper iframe {
+    height: 3500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .registration-form-wrapper iframe {
+    height: 3000px;
+  }
+}
