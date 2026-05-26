@@ -11,7 +11,7 @@ export default function SpecialEventsFAQSection() {
     },
     {
       question: 'How do I book an event at Crics 22Yards Columbus?',
-      answer: 'To book an event, please visit our contact us page or contact our events coordinator directly at (737) 323 0270. We recommend booking your event well in advance to ensure availability.'
+      answer: 'To book an event, please visit our contact us page or contact our events coordinator directly at (713) 498 2155. We recommend booking your event well in advance to ensure availability.'
     },
     {
       question: 'What facilities are available for events at Crics 22Yards Columbus?',

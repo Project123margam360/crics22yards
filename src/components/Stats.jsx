@@ -29,7 +29,7 @@ export default function Stats() {
   }, []);
 
   const animateNumbers = () => {
-    const duration = 2000; // 2 seconds
+    const duration = 1200; // 1.2 seconds
     const startTime = Date.now();
     const targets = { lanes: 8, bowling: 2, shop: 1, box: 2 };
 
