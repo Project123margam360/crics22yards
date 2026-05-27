@@ -1,0 +1,130 @@
+.summer-camp-page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+}
+
+.summer-camp-page {
+  width: 100%;
+  padding: 56px 24px 72px;
+}
+
+.summer-camp-card {
+  max-width: 1180px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid rgba(0, 82, 156, 0.12);
+  border-radius: 24px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.summer-camp-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.summer-camp-kicker {
+  margin: 0;
+  color: #00529c;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.summer-camp-copy h1 {
+  margin: 0;
+  color: #131416;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  line-height: 1.05;
+}
+
+.summer-camp-description {
+  margin: 0;
+  max-width: 34rem;
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.summer-camp-register-button {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: #f5c400;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 20px rgba(245, 196, 0, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.summer-camp-register-button:hover {
+  background: #e0b200;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(245, 196, 0, 0.34);
+}
+
+.summer-camp-image-frame {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: #f3f4f6;
+  box-shadow: inset 0 0 0 1px rgba(19, 20, 22, 0.06);
+  overflow: visible; /* Changed from hidden to visible to ensure image frame doesn't crop */
+}
+
+.summer-camp-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.summer-camp-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+@media (max-width: 900px) {
+  .summer-camp-page {
+    padding: 32px 16px 56px;
+  }
+
+  .summer-camp-card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .summer-camp-page {
+    padding: 20px 12px 40px;
+  }
+
+  .summer-camp-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .summer-camp-copy {
+    gap: 14px;
+  }
+
+  .summer-camp-register-button {
+    width: 100%;
+  }
+}
