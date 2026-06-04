@@ -45,7 +45,7 @@ Currently active in USA domestic and franchise cricket leagues.
 Known for disciplined bowling, consistency, and match impact.
 Passionate about contributing to team success and growing in competitive cricket.
 Active participant in Minor League Cricket (USA).
-Experience in high-intensity T20 competitions.
+Experience in high-intensity T20 competitions..
 
 
 
