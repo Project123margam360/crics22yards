@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Coaches.css';
-import coach from '../assets/10002.jpg';
+import coach from '../assets/phani.jpg';
 
 export default function Coaches() {
   const [hasAnimated, setHasAnimated] = useState(false);
