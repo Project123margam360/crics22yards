@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Coaches.css';
-import coach1 from '../assets/10002.jpg';
-import coach2 from '../assets/10011.jpg';
+import coach from '../assets/10002.jpg';
 
 export default function Coaches() {
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -9,13 +8,8 @@ export default function Coaches() {
 
   const coaches = [
     {
-      image: coach1,
-      name: 'Kamal Passi',
-      role: 'Coach'
-    },
-    {
-      image: coach2,
-      name: 'Harmeet Singh',
+      image: coach,
+      name: 'Phani Teja Simhadri',
       role: 'Coach'
     }
   ];
@@ -44,7 +38,15 @@ export default function Coaches() {
           <h2 className="coaches-title">Meet Our Coaches at Crics 22Yards Columbus</h2>
           <h3 className="coaches-subtitle">Experience Excellence in Coaching</h3>
           <p className="coaches-description">
-            At Crics 22Yards Columbus, our coaching team is the backbone of our training programs. Comprised of former professional players and certified coaching experts, our staff brings a wealth of knowledge and experience to every session. Meet the dedicated professionals committed to transforming your cricketing potential into excellence.
+            At Crics 22Yards Columbus, we are proud to have Phani Teja Simhadri as our esteemed coach. With a rich background in cricket, Phani brings a wealth of experience and expertise to our team.
+            <br/><br/>
+            <strong>Summary</strong><br/>
+            I am a professional cricketer specializing as a left-arm fast-medium bowler.<br/>
+            Currently active in USA domestic and franchise cricket leagues.<br/>
+            Known for disciplined bowling, consistency, and match impact.<br/>
+            Passionate about contributing to team success and growing in competitive cricket.<br/>
+            Active participant in Minor League Cricket (USA).<br/>
+            Experience in high-intensity T20 competitions.
           </p>
         </div>
 
