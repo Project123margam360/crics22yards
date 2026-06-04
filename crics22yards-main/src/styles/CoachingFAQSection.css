@@ -1,0 +1,195 @@
+.coaching-faq-section {
+  width: 100%;
+  padding: 80px 40px;
+  background: #ffffff;
+}
+
+.coaching-faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coaching-faq-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #131416;
+  text-align: center;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.coaching-faq-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #131416;
+  text-align: center;
+  margin: 0 0 30px 0;
+  line-height: 1.2;
+}
+
+.coaching-faq-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666666;
+  text-align: center;
+  margin: 0 0 50px 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coaching-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.coaching-faq-item {
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.coaching-faq-question {
+  width: 100%;
+  background: #f5f5f5;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #131416;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coaching-faq-question:hover {
+  background: #eeeeee;
+  border-bottom-color: #eeeeee;
+}
+
+.coaching-faq-question.active {
+  background: #00529C;
+  color: #D7AF43;
+  border-bottom-color: #00529C;
+}
+
+.coaching-faq-icon {
+  transition: transform 0.3s ease;
+  color: currentColor;
+}
+
+.coaching-faq-question.active .coaching-faq-icon {
+  transform: rotate(180deg);
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    max-height: 500px;
+    transform: translateY(0);
+  }
+}
+
+.coaching-faq-answer {
+  background: #f5f5f5;
+  padding: 20px;
+  border-bottom: 1px solid #eeeeee;
+  animation: slideDown 0.6s ease-out;
+  overflow: hidden;
+}
+
+.coaching-faq-item:last-child .coaching-faq-question,
+.coaching-faq-item:last-child .coaching-faq-answer {
+  border-bottom: none;
+}
+
+.coaching-faq-answer p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666666;
+  margin: 0;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .coaching-faq-section {
+    padding: 60px 30px;
+  }
+
+  .coaching-faq-heading {
+    font-size: 36px;
+  }
+
+  .coaching-faq-subtitle {
+    font-size: 28px;
+  }
+
+  .coaching-faq-description {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .coaching-faq-question {
+    font-size: 16px;
+    padding: 18px;
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .coaching-faq-section {
+    padding: 40px 20px;
+  }
+
+  .coaching-faq-container {
+    max-width: 100%;
+  }
+
+  .coaching-faq-heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .coaching-faq-subtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .coaching-faq-description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .coaching-faq-list {
+    gap: 0;
+  }
+
+  .coaching-faq-question {
+    font-size: 14px;
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .coaching-faq-answer {
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .coaching-faq-answer p {
+    font-size: 13px;
+  }
+
+  .coaching-faq-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
