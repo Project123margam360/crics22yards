@@ -38,15 +38,23 @@ export default function Coaches() {
           <h2 className="coaches-title">Meet Our Coaches at Crics 22Yards Columbus</h2>
           <h3 className="coaches-subtitle">Experience Excellence in Coaching</h3>
           <p className="coaches-description">
+            <strong>About Phani Teja Simhadri</strong>
+            <br/>
             At Crics 22Yards Columbus, we are proud to have Phani Teja Simhadri as our esteemed coach. With a rich background in cricket, Phani brings a wealth of experience and expertise to our team.
             <br/><br/>
-            <strong>Summary</strong><br/>
-            I am a professional cricketer specializing as a left-arm fast-medium bowler.<br/>
-            Currently active in USA domestic and franchise cricket leagues.<br/>
-            Known for disciplined bowling, consistency, and match impact.<br/>
-            Passionate about contributing to team success and growing in competitive cricket.<br/>
-            Active participant in Minor League Cricket (USA).<br/>
-            Experience in high-intensity T20 competitions.
+            <strong>Professional Summary</strong>
+            <br/>
+            • Professional cricketer specializing as a left-arm fast-medium bowler
+            <br/>
+            • Currently active in USA domestic and franchise cricket leagues
+            <br/>
+            • Known for disciplined bowling, consistency, and match impact
+            <br/>
+            • Passionate about contributing to team success and growing in competitive cricket
+            <br/>
+            • Active participant in Minor League Cricket (USA)
+            <br/>
+            • Experience in high-intensity T20 competitions
           </p>
         </div>
 
