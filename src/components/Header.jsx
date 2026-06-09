@@ -104,7 +104,7 @@ export default function Header() {
               </a>
 
               <a
-                href="https://app.glofox.com/portal/#/branch/69b47e4aed1ec1e3bf05b2fb/memberships"
+                href="https://axon22yards.com/book/columbus"
                 target="_blank"
                 rel="noopener noreferrer"
               >
