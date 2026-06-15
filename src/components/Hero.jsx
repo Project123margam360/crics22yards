@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/Hero.css';
 import facilityImage from '../assets/10021.jpeg';
 
+const laneRentalBookingUrl = 'https://axon22yards.com/book/columbus';
+
 export default function Hero() {
   const handleBookLane = () => {
     document.getElementById('rentals')?.scrollIntoView({ behavior: 'smooth' });
