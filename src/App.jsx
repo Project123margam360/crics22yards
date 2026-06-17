@@ -25,6 +25,7 @@ function App() {
           <Route path="/special-events" element={<SpecialEventsPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/registration" element={<RegistrationPage />} />
+          <Route path="/register" element={<RegistrationPage />} />
           <Route path="/summer-camp" element={<SummerCampPage />} />
         </Route>
       </Routes>
