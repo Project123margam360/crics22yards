@@ -40,7 +40,7 @@ export default function Header() {
           <Link to="/special-events" onClick={closeMobileMenu}>Special Events</Link>
           <Link to="/summer-camp" onClick={closeMobileMenu}>Summer Camp</Link>
           <Link to="/contact-us" onClick={closeMobileMenu}>Contact Us</Link>
-          <Link to="/register" onClick={closeMobileMenu}>Register</Link>
+          <Link to="/registeration" onClick={closeMobileMenu}>Registeration</Link>
         </div>
 
         <div className="drop-wrap">
