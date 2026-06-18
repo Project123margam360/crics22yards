@@ -131,37 +131,6 @@ export default function Header() {
                 </svg>
                 Membership
               </a>
-
-              <a
-                href="https://app.glofox.com/portal/#/branch/69b47e4aed1ec1e3bf05b2fb/classes-day-view"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="1"
-                    y="1"
-                    width="12"
-                    height="12"
-                    rx="2"
-                    stroke="currentColor"
-                    strokeWidth="1.4"
-                  />
-                  <path
-                    d="M4 4.5h6M4 7h6M4 9.5h4"
-                    stroke="currentColor"
-                    strokeWidth="1.4"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                Classes & 1-on-1
-              </a>
             </div>
           )}
         </div>

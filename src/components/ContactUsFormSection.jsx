@@ -20,20 +20,35 @@ const ContactUsFormSection = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      gender: 'Male',
-      activity: '',
-      notes: ''
-    });
+    try {
+      const response = await fetch('https://formspree.io/f/mpqegdlj', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          gender: 'Male',
+          activity: '',
+          notes: ''
+        });
+        alert('Thank you! Your message has been sent successfully.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error sending your message. Please try again.');
+    }
   };
 
   return (
