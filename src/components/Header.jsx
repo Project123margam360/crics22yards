@@ -131,6 +131,11 @@ export default function Header() {
                 </svg>
                 Membership
               </a>
+              <a
+                href="https://app.glofox.com/portal/#/branch/69b47e4aed1ec1e3bf05b2fb/classes-day-view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
             </div>
           )}
         </div>
