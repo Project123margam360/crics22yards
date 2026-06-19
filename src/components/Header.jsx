@@ -104,7 +104,7 @@ export default function Header() {
               </a>
 
               <a
-                href="https://axon22yards.com/book/columbus"
+                href="https://axon22yards.com/login"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -130,12 +130,6 @@ export default function Header() {
                   />
                 </svg>
                 Membership
-              </a>
-              <a
-                href="https://app.glofox.com/portal/#/branch/69b47e4aed1ec1e3bf05b2fb/classes-day-view"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
               </a>
             </div>
           )}
