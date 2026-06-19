@@ -136,6 +136,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+              </a>
             </div>
           )}
         </div>
