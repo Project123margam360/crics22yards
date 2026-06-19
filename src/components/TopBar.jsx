@@ -22,13 +22,13 @@ export default function TopBar() {
             <svg className="topbar-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.35 1.47C15.68 1.03 13.99.8 12.19.8c-.91 0-1.78.06-2.65.18-7.99 1.12-14.06 7.94-14.06 16.18 0 1.03.1 2.04.29 3.02C.15 22.89 1.51 24 3.15 24H8v-7H5v-3h3V9.41c0-2.87 1.76-4.43 4.31-4.43.95 0 1.77.07 2.01.1v2.33h-1.38c-1.08 0-1.3.51-1.3 1.27V13h2.6l-.34 3h-2.26V24h4.42c1.64 0 3-1.11 3.35-2.59.19-.98.29-1.99.29-3.02 0-8.24-6.07-15.06-14.06-16.18z" fill="currentColor"/>
             </svg>
-            <a href="https://facebook.com/crics22yards" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61577612886478" target="_blank" rel="noopener noreferrer">Facebook</a>
           </div>
           <div className="topbar-item">
             <svg className="topbar-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.645.07 4.849 0 3.205-.012 3.584-.07 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" fill="currentColor"/>
             </svg>
-            <a href="https://instagram.com/crics22yards" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.instagram.com/crics22yardscolumbus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </div>
         <div className="topbar-phone">
