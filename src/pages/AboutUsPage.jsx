@@ -12,11 +12,16 @@ import BottomFooter from '../components/BottomFooter';
 export default function AboutUsPage() {
   return (
     <div className="about-us-page">
-      {/* Hero Banner */}
-      <section className="about-banner" style={{ backgroundImage: `url(${bannerImage})` }}>
+      <section
+        className="about-banner"
+        style={{ backgroundImage: `url(${bannerImage})` }}
+        aria-label="About Crics 22Yards Columbus indoor cricket academy"
+      >
         <div className="about-banner-overlay"></div>
+
         <div className="about-banner-content">
-          <h1>About Crics 22Yards Academy In Columbus Ohio</h1>
+          <h1>About Crics 22Yards Columbus Indoor Cricket Academy</h1>
+
           <div className="breadcrumb">
             <span>Home</span>
             <span className="breadcrumb-separator">—</span>
@@ -25,25 +30,12 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* About Us Section */}
       <AboutUsSection />
-
-      {/* Vision & Mission Section */}
       <VisionMissionSection />
-
-      {/* Why Join Us Section */}
       <WhyJoinUsSection />
-
-      {/* Coaches Section */}
       <Coaches />
-
-      {/* FAQ Section */}
       <FAQSection />
-
-      {/* Contact Us Section */}
       <Footer />
-
-      {/* Bottom Footer */}
       <BottomFooter />
     </div>
   );
