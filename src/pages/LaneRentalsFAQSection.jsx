@@ -54,6 +54,11 @@ export default function LaneRentalsFAQSection() {
       question: 'Do you offer indoor cricket facilities year-round?',
       answer:
         'Yes. Our indoor cricket facility operates year-round, allowing players to train consistently regardless of weather conditions.'
+    },
+    {
+      question: 'How do I get to Crics 22Yards Columbus?',
+      answer:
+        'Crics 22Yards Columbus is located at 9525 OH-161, Plain City, OH 43064. Our indoor cricket facility is easily accessible for players from Columbus, Dublin, Hilliard, Powell, Marysville, and nearby Ohio communities.'
     }
   ];
 
