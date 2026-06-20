@@ -8,36 +8,52 @@ export default function LaneRentalsBenefitsSection() {
   const benefits = [
     {
       image: img1,
-      title: 'Skill Improvement',
-      description: 'Utilize our smart lanes to work on specific aspects of your game, from batting technique to bowling accuracy.'
+      title: 'Improve Batting & Bowling Skills',
+      description:
+        'Use our indoor cricket nets to focus on batting technique, bowling accuracy, footwork, shot selection, timing, and match preparation in a controlled training environment.'
     },
     {
       image: img2,
-      title: 'Personalized Environment',
-      description: 'Enjoy the privacy and focus of our partitioned lanes, ensuring a distraction-free practice session.'
+      title: 'Private & Focused Practice Environment',
+      description:
+        'Practice in dedicated indoor cricket lanes designed to reduce distractions and help players, coaches, and teams get more productive training sessions.'
     },
     {
       image: img3,
-      title: 'Professional Coaching',
-      description: 'Enhance your practice with guidance from experienced coaches who can provide real-time feedback and tips.'
+      title: 'Coaching Support Available',
+      description:
+        'Enhance your lane rental session with guidance from experienced cricket coaches who can provide feedback on batting, bowling, fielding, and overall technique.'
     }
   ];
 
   return (
     <section className="lane-rentals-benefits-section">
       <div className="benefits-container">
-        <p className="benefits-label">More Reasons to Choose <span className="benefits-label-highlight">US</span></p>
-        <h2 className="benefits-title">Benefits of Practicing at Crics 22Yards Columbus</h2>
-        
+        <p className="benefits-label">
+          More Reasons to Choose <span className="benefits-label-highlight">US</span>
+        </p>
+
+        <h2 className="benefits-title">
+          Benefits of Indoor Cricket Lane Rentals at Crics 22Yards Columbus
+        </h2>
+
         <div className="benefits-grid">
           {benefits.map((benefit, index) => (
             <div key={index} className="benefit-card">
-              <div className="benefit-image" style={{ backgroundImage: `url(${benefit.image})` }}>
+              <div
+                className="benefit-image"
+                style={{ backgroundImage: `url(${benefit.image})` }}
+                role="img"
+                aria-label={`${benefit.title} at Crics 22Yards Columbus Ohio`}
+              >
                 <div className="benefit-overlay"></div>
               </div>
+
               <div className="benefit-content">
                 <h3 className="benefit-card-title">{benefit.title}</h3>
-                <p className="benefit-card-description">{benefit.description}</p>
+                <p className="benefit-card-description">
+                  {benefit.description}
+                </p>
               </div>
             </div>
           ))}
