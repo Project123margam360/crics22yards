@@ -4,13 +4,24 @@ import bgImage from '../assets/12000.jpg';
 
 export default function CoachingHeroSection() {
   return (
-    <section className="coaching-hero-section" style={{ backgroundImage: `url(${bgImage})` }}>
+    <section
+      className="coaching-hero-section"
+      style={{ backgroundImage: `url(${bgImage})` }}
+      aria-label="Cricket coaching and training programs at Crics 22Yards Columbus Ohio"
+    >
       <div className="coaching-hero-overlay"></div>
+
       <div className="coaching-hero-content">
-        <h1 className="coaching-hero-title">Our Cricket Coaching & Training Programs At Crics 22Yards Columbus</h1>
-        <p className="coaching-hero-subtitle">Develop Your Skills at Plain City, OH's Premier Cricket Academy</p>
+        <h1 className="coaching-hero-title">
+          Cricket Coaching & Training Programs in Columbus, OH
+        </h1>
+
+        <p className="coaching-hero-subtitle">
+          Professional cricket coaching for kids, youth players, beginners, and advanced cricketers in Plain City, Ohio.
+        </p>
+
         <p className="coaching-hero-description">
-          Welcome to Crics 22Yards Columbus, where we provide professional cricket coaching and training tailored for every level of experience. Whether you're a beginner eager to learn the basics or an advanced player aiming to polish your skills, our diverse programs are designed to cater to all needs in Plain City, OH, TX.
+          Crics 22Yards Columbus offers structured cricket coaching programs designed to improve batting, bowling, fielding, fitness, match awareness, and overall player development. Our indoor cricket academy serves players from Columbus, Plain City, Dublin, Hilliard, Powell, Marysville, and nearby Ohio communities.
         </p>
       </div>
     </section>
