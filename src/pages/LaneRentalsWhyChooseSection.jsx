@@ -12,9 +12,31 @@ export default function LaneRentalsWhyChooseSection() {
     notes: ''
   });
 
+  const features = [
+    {
+      icon: '🏏',
+      title: 'Professional Indoor Cricket Nets',
+      description:
+        'Train year-round in premium indoor cricket lanes designed for batting practice, bowling sessions, coaching programs, and team training.'
+    },
+    {
+      icon: '🎯',
+      title: 'Advanced Cricket Training Equipment',
+      description:
+        'Practice with professional bowling machines, training tools, and modern cricket technology designed to improve technique and performance.'
+    },
+    {
+      icon: '📅',
+      title: 'Flexible Lane Rental Booking',
+      description:
+        'Book cricket lanes by the hour for individual practice, private coaching, team sessions, batting practice, bowling drills, and match preparation.'
+    }
+  ];
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+
+    setFormData((prev) => ({
       ...prev,
       [name]: value
     }));
@@ -22,8 +44,9 @@ export default function LaneRentalsWhyChooseSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Reset form
+
+    console.log('Lane rental inquiry submitted:', formData);
+
     setFormData({
       firstName: '',
       lastName: '',
@@ -35,32 +58,24 @@ export default function LaneRentalsWhyChooseSection() {
     });
   };
 
-  const features = [
-    {
-      icon: '🏛️',
-      title: 'Smart Lane Technology',
-      description: 'Each lane is equipped with the latest technology, including automatic feed bowling machines, digital video analysis, and customizable pitch settings to cater to each player\'s needs.'
-    },
-    {
-      icon: '🏌️',
-      title: 'Top-of-the-Line Equipment',
-      description: 'Practice with cutting-edge tools like our BOLA and JUGS bowling machines, which offer adjustable speeds and deliveries, and our Cricket Shot Shaper for precision training.'
-    },
-    {
-      icon: '📅',
-      title: 'Flexible Booking Options',
-      description: 'Rent a lane by the hour or sign up for extended sessions at competitive rates. Our flexible scheduling makes it easy to find a time that works best for you.'
-    }
-  ];
-
   return (
     <section className="lane-rentals-why-choose-section">
       <div className="why-choose-container">
         <div className="why-choose-left">
-          <p className="why-choose-label">What Makes us Special</p>
-          <h2 className="why-choose-title">Why Choose Crics 22Yards Columbus for Lane Rental?</h2>
+          <p className="why-choose-label">
+            Indoor Cricket Nets & Training Facilities
+          </p>
+
+          <h2 className="why-choose-title">
+            Why Choose Crics 22Yards Columbus for Indoor Cricket Lane Rentals?
+          </h2>
+
           <p className="why-choose-description">
-            Our state-of-the-art indoor cricket facility is designed to cater to players of all levels. With advanced technology and high-quality equipment, we provide an unparalleled cricket experience that rivals internationally renowned academies.
+            Crics 22Yards Columbus provides professional indoor cricket lane
+            rentals for batting practice, bowling practice, private coaching,
+            team training, match preparation, and recreational cricket. Our
+            facility serves players from Columbus, Plain City, Dublin, Hilliard,
+            Powell, Marysville, and surrounding Ohio communities.
           </p>
 
           <div className="features-list">
@@ -70,6 +85,7 @@ export default function LaneRentalsWhyChooseSection() {
                   <div className="feature-icon">{feature.icon}</div>
                   <h3 className="feature-title">{feature.title}</h3>
                 </div>
+
                 <div className="feature-right">
                   <div className="feature-divider"></div>
                   <p className="feature-description">{feature.description}</p>
@@ -80,92 +96,106 @@ export default function LaneRentalsWhyChooseSection() {
         </div>
 
         <div className="why-choose-right">
-          <h3 className="inquiry-title">Send us an Inquiry</h3>
+          <h3 className="inquiry-title">Book Your Indoor Cricket Lane</h3>
+
           <p className="inquiry-description">
-            Don't miss out on the opportunity to train in one of Plain City, OH's best indoor cricket facilities. Contact us today to book your lane and take your cricket skills to the next level.
+            Reserve an indoor cricket lane for batting practice, bowling
+            training, private coaching, team sessions, or match preparation.
+            Complete the form below and our team will contact you regarding
+            availability and booking options.
           </p>
 
           <form className="inquiry-form" onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
-                <label>First Name</label>
+                <label htmlFor="firstName">First Name</label>
                 <input
+                  id="firstName"
                   type="text"
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
-                  placeholder=""
                 />
               </div>
+
               <div className="form-group">
-                <label>Last Name</label>
+                <label htmlFor="lastName">Last Name</label>
                 <input
+                  id="lastName"
                   type="text"
                   name="lastName"
                   value={formData.lastName}
                   onChange={handleChange}
-                  placeholder=""
                 />
               </div>
             </div>
 
             <div className="form-row">
               <div className="form-group">
-                <label>Email</label>
+                <label htmlFor="email">Email</label>
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder=""
                 />
               </div>
+
               <div className="form-group">
-                <label>Phone</label>
+                <label htmlFor="phone">Phone</label>
                 <input
+                  id="phone"
                   type="tel"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder=""
                 />
               </div>
             </div>
 
             <div className="form-row">
               <div className="form-group">
-                <label>Gender</label>
-                <select name="gender" value={formData.gender} onChange={handleChange}>
+                <label htmlFor="gender">Gender</label>
+                <select
+                  id="gender"
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleChange}
+                >
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
+
               <div className="form-group">
-                <label>Activity</label>
+                <label htmlFor="activity">Activity</label>
                 <input
+                  id="activity"
                   type="text"
                   name="activity"
                   value={formData.activity}
                   onChange={handleChange}
-                  placeholder=""
                 />
               </div>
             </div>
 
             <div className="form-group full-width">
-              <label>Notes</label>
+              <label htmlFor="notes">Notes</label>
               <textarea
+                id="notes"
                 name="notes"
                 value={formData.notes}
                 onChange={handleChange}
-                placeholder=""
                 rows="5"
               ></textarea>
             </div>
 
             <div className="submit-box">
-              <button type="submit" className="submit-btn">SEND INQUIRY</button>
+              <button type="submit" className="submit-btn">
+                SEND INQUIRY
+              </button>
             </div>
           </form>
         </div>
