@@ -6,40 +6,54 @@ export default function LaneRentalsFAQSection() {
 
   const faqs = [
     {
-      question: 'Can I book a lane on short notice?',
-      answer: 'Yes, you can book lanes on short notice depending on availability. However, we recommend booking in advance to ensure your preferred time slot is available.'
+      question: 'Can I book an indoor cricket lane on short notice?',
+      answer:
+        'Yes. Same-day lane rentals may be available depending on schedule availability. We recommend booking in advance to secure your preferred time slot.'
     },
     {
-      question: 'What should I bring to my lane rental session?',
-      answer: 'For your session, you should bring your cricket gear, including a bat, appropriate shoes, and protective equipment.'
+      question: 'What should I bring for my cricket lane rental session?',
+      answer:
+        'Players should bring their cricket bat, protective gear, cricket shoes, and water bottle. If needed, additional equipment may be available at the facility.'
     },
     {
-      question: 'Is there a minimum or maximum time I can book a lane?',
-      answer: 'The minimum booking time for a lane is one hour. There is no maximum time limit; however, extended sessions will depend on lane availability. We accommodate full-day rentals for intensive training or special events.'
+      question: 'What is the minimum lane rental duration?',
+      answer:
+        'The minimum booking duration is typically one hour. Longer sessions can be booked for individual practice, team training, coaching sessions, and match preparation.'
     },
     {
-      question: 'Do you offer discounts for group bookings or long-term rentals?',
-      answer: 'Yes, we offer discounted rates for group bookings and long-term rentals. Contact our customer service for more details and to discuss potential savings.'
+      question: 'Do you offer discounts for teams or frequent players?',
+      answer:
+        'Yes. Membership plans, group bookings, team training packages, and long-term rental options may qualify for discounted pricing. Contact our team for current offers.'
     },
     {
       question: 'Can I cancel or reschedule my booking?',
-      answer: 'Yes, bookings can be canceled or rescheduled. We ask that you notify us at least 24 hours in advance to avoid cancellation fees. For more information on our cancellation policy, please visit our website or contact us directly.'
+      answer:
+        'Yes. Lane rental bookings can generally be rescheduled or cancelled with advance notice. Please contact the facility regarding current cancellation policies.'
     },
     {
-      question: 'Are coaching services available during the lane rental?',
-      answer: 'Yes, we offer coaching services during lane rentals. You can book sessions with our experienced coaches to enhance your training experience. Please mention your interest in coaching services when booking your lane so we can ensure a coach is available.'
+      question: 'Can I book coaching together with a lane rental?',
+      answer:
+        'Absolutely. Players can combine lane rentals with professional cricket coaching sessions for batting, bowling, fielding, and overall skill development.'
     },
     {
-      question: 'Is the facility equipped to handle special needs or accessibility requirements?',
-      answer: 'Absolutely, our facility is designed to be inclusive and accessible. If you have any specific needs or requirements, please let us know in advance so we can make the necessary arrangements to accommodate you comfortably.'
+      question: 'Are your indoor cricket nets suitable for beginners?',
+      answer:
+        'Yes. Our indoor cricket lanes are designed for players of all skill levels, from beginners learning the basics to advanced players preparing for competitive cricket.'
     },
     {
-      question: 'Are there facilities available for teams to practice together?',
-      answer: 'Yes, our facility can accommodate team practices. Multiple lanes can be booked simultaneously, and we offer the use of our team meeting rooms and analysis areas as part of the rental if needed.'
+      question: 'Can teams rent multiple lanes for practice?',
+      answer:
+        'Yes. Teams can reserve multiple lanes simultaneously for batting practice, bowling drills, team training sessions, and match preparation.'
     },
     {
-      question: 'How do I get to Crics 22Yards Columbus?',
-      answer: 'Crics 22Yards Columbus is located at 14929, Westpark DR, STE 300, Plain City, OH, TX 77082. We offer ample parking, and our facility is easily accessible via public transportation. For detailed directions, please check our website or contact us.'
+      question: 'What makes Crics 22Yards Columbus different from other indoor cricket facilities?',
+      answer:
+        'Crics 22Yards Columbus combines professional indoor cricket nets, quality training equipment, cricket coaching programs, flexible booking options, youth development programs, and a year-round indoor training environment.'
+    },
+    {
+      question: 'Do you offer indoor cricket facilities year-round?',
+      answer:
+        'Yes. Our indoor cricket facility operates year-round, allowing players to train consistently regardless of weather conditions.'
     }
   ];
 
@@ -50,21 +64,29 @@ export default function LaneRentalsFAQSection() {
   return (
     <section className="lane-rentals-faq-section">
       <div className="faq-container">
-        <p className="faq-label">Got Questions? We have answers</p>
-        <h2 className="faq-title">Frequently Asked Questions</h2>
+        <p className="faq-label">Indoor Cricket Lane Rental FAQs</p>
+
+        <h2 className="faq-title">
+          Frequently Asked Questions About Indoor Cricket Lane Rentals
+        </h2>
 
         <div className="faq-list">
           {faqs.map((faq, index) => (
             <div key={index} className="faq-item">
               <button
-                className={`faq-question ${activeIndex === index ? 'active' : ''}`}
+                className={`faq-question ${
+                  activeIndex === index ? 'active' : ''
+                }`}
                 onClick={() => toggleAccordion(index)}
+                aria-expanded={activeIndex === index}
               >
                 <span>{faq.question}</span>
+
                 <span className="faq-icon">
                   {activeIndex === index ? '−' : '+'}
                 </span>
               </button>
+
               {activeIndex === index && (
                 <div className="faq-answer">
                   <p>{faq.answer}</p>
