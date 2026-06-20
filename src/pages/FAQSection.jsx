@@ -7,27 +7,38 @@ export default function FAQSection() {
   const faqs = [
     {
       question: 'What is Crics 22Yards Columbus?',
-      answer: 'Crics 22Yards Columbus is a premier indoor cricket facility dedicated to providing top-tier cricket training and development for players of all ages and skill levels. We focus on nurturing young talent and offering comprehensive training programs in a state-of-the-art environment.'
+      answer:
+        'Crics 22Yards Columbus is a premier indoor cricket academy and training facility located at 9525 OH-161, Plain City, OH 43064. We offer cricket coaching, indoor cricket nets, lane rentals, summer camps, youth development programs, and cricket events for players across Columbus and Central Ohio.'
     },
     {
-      question: 'What programs do you offer?',
-      answer: 'We offer a variety of cricket programs including beginner training, advanced coaching, personal coaching sessions, and competitive leagues. Each program is tailored to address the needs of different skill levels and age groups.'
+      question: 'What cricket programs do you offer?',
+      answer:
+        'We offer beginner cricket coaching, youth cricket training, advanced coaching, private coaching sessions, indoor lane rentals, summer camps, competitive training programs, and special cricket events.'
     },
     {
       question: 'What facilities are available at Crics 22Yards Columbus?',
-      answer: 'Our facility includes multiple cricket lanes with professional standard netting, advanced bowling machines, a dedicated fitness area, and a pro shop stocked with all necessary cricket gear. We also provide space for events and parties.'
+      answer:
+        'Our facility includes indoor cricket nets, professional training lanes, bowling machines, coaching areas, fitness support, player development spaces, and cricket equipment access for training and practice.'
     },
     {
-      question: 'Do you host any special events?',
-      answer: 'Yes, we host a range of special events throughout the year, including tournaments, corporate events, and birthday parties. These events are designed to promote cricket in the community and provide fun and competition for all attendees.'
+      question: 'Do you offer cricket coaching for kids?',
+      answer:
+        'Yes. We provide kids cricket coaching and youth development programs focused on batting, bowling, fielding, fitness, teamwork, discipline, and game awareness.'
     },
     {
-      question: 'Can I rent the facility for private events?',
-      answer: 'Yes, we host a range of special events throughout the year, including tournaments, corporate events, and birthday parties. These events are designed to promote cricket in the community and provide fun and competition for all attendees.'
+      question: 'Can I rent indoor cricket lanes?',
+      answer:
+        'Yes. Players and teams can rent indoor cricket lanes for batting practice, bowling practice, private coaching, team sessions, and match preparation.'
     },
     {
-      question: 'What safety measures are in place at Crics 22Yards Columbus?',
-      answer: 'The safety of our participants and staff is our top priority. We adhere to strict safety protocols, including regular maintenance of equipment, training our staff in first aid, and ensuring all activities are supervised by qualified coaches.'
+      question: 'Do you host cricket events and parties?',
+      answer:
+        'Yes. Crics 22Yards Columbus hosts cricket events, tournaments, team gatherings, birthday parties, corporate events, and community cricket activities.'
+    },
+    {
+      question: 'Where is Crics 22Yards Columbus located?',
+      answer:
+        'Crics 22Yards Columbus is located at 9525 OH-161, Plain City, OH 43064. We serve players from Columbus, Plain City, Dublin, Hilliard, Powell, Marysville, and nearby Ohio communities.'
     }
   ];
 
@@ -38,18 +49,27 @@ export default function FAQSection() {
   return (
     <section className="faq-section">
       <div className="faq-container">
-        <h2 className="faq-title">Got Questions? We have answers</h2>
-        <h3 className="faq-subtitle">Frequently Asked Questions</h3>
+        <h2 className="faq-title">Crics 22Yards Columbus FAQs</h2>
+
+        <h3 className="faq-subtitle">
+          Frequently Asked Questions About Our Indoor Cricket Facility
+        </h3>
+
         <p className="faq-description">
-          Transform your celebrations and team-building events into unforgettable experiences at Crics 22Yards Columbus. Our facility provides a unique setting that combines sport and fun, making every event memorable. Here's what we offer:
+          Learn more about our cricket coaching programs, indoor cricket lane
+          rentals, youth training, summer camps, events, facilities, and location
+          in Plain City near Columbus, Ohio.
         </p>
 
         <div className="faq-items">
           {faqs.map((faq, index) => (
             <div key={index} className="faq-item">
               <button
-                className={`faq-question ${expandedIndex === index ? 'active' : ''}`}
+                className={`faq-question ${
+                  expandedIndex === index ? 'active' : ''
+                }`}
                 onClick={() => toggleFAQ(index)}
+                aria-expanded={expandedIndex === index}
               >
                 <span>{faq.question}</span>
                 <svg
@@ -69,6 +89,7 @@ export default function FAQSection() {
                   />
                 </svg>
               </button>
+
               {expandedIndex === index && faq.answer && (
                 <div className="faq-answer">
                   <p>{faq.answer}</p>
