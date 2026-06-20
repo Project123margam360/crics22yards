@@ -10,6 +10,7 @@ import SpecialEventsPage from './pages/SpecialEventsPage'
 import ContactUsPage from './pages/ContactUsPage'
 import RegistrationPage from './pages/RegistrationPage'
 import SummerCampPage from './pages/SummerCampPage'
+import NotFoundPage from './pages/NotFoundPage'
 import './App.css'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/registration" element={<RegistrationPage />} />
           <Route path="/register" element={<RegistrationPage />} />
           <Route path="/summer-camp" element={<SummerCampPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </Router>
