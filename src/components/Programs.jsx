@@ -30,13 +30,15 @@ export default function Programs() {
   return (
     <section ref={sectionRef} id="coaching" className="programs-section">
       <div className="programs-container">
-        {/* Left Content */}
         <div className={`programs-left ${animate ? 'animate' : ''}`}>
-          <h3 className="programs-subtitle">Our Programs</h3>
-          <h2 className="programs-title">Elevate Your Game:<br />Junior and Senior<br />Training Programs</h2>
-          
+          <h3 className="programs-subtitle">Cricket Coaching Programs</h3>
+
+          <h2 className="programs-title">
+            Junior & Senior Cricket Training Programs in Columbus, OH
+          </h2>
+
           <p className="programs-description">
-            Discover tailored cricket training at Crics 22Yards Columbus with our distinct Junior and Senior Programs. Each program is meticulously crafted to meet the needs of players at different stages of their cricket journey. From foundational skills for our young enthusiasts to advanced tactics for seasoned players, our programs are designed to help every cricketer achieve their full potential.
+            Crics 22Yards Columbus offers structured cricket coaching programs in Plain City, Ohio for kids, youth players, beginners, intermediate players, and advanced cricketers. Our training focuses on batting, bowling, fielding, fitness, match awareness, and long-term player development.
           </p>
 
           <div className="programs-list">
@@ -45,7 +47,7 @@ export default function Programs() {
               <div>
                 <h4 className="program-name">Junior Development Program</h4>
                 <p className="program-text">
-                  The Young Cricketers Initiative at Crics 22Yards Columbus is designed for players aged 6-16. This program focuses on instilling the fundamentals of cricket through a structured curriculum that emphasizes skill development, understanding of the game, and physical fitness. Our goal is to foster a love for the game and to build a strong foundation for future growth in the sport.
+                  Our junior cricket coaching program is designed for young players aged 6 to 16. It focuses on cricket fundamentals, hand-eye coordination, batting technique, bowling basics, fielding skills, fitness, teamwork, discipline, and confidence building in a safe and supportive indoor cricket environment.
                 </p>
               </div>
             </div>
@@ -55,17 +57,20 @@ export default function Programs() {
               <div>
                 <h4 className="program-name">Senior Training Program</h4>
                 <p className="program-text">
-                  The Elite Cricketers Pathway is designed for players aged 17 and above, focusing on high-performance training intended to prepare athletes for competitive and professional levels of cricket. This program combines advanced coaching, mental conditioning, and exposure to higher levels of play.
+                  Our senior cricket training program is designed for players aged 17 and above who want to improve performance for competitive cricket. Training includes advanced batting, bowling strategies, fielding drills, match scenarios, mental conditioning, fitness, and game awareness.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Right Image */}
         <div className={`programs-right ${animate ? 'animate' : ''}`}>
           <div className="programs-image-wrapper">
-            <img src={programImage} alt="Cricket Training Programs" className="programs-image" />
+            <img
+              src={programImage}
+              alt="Junior and senior cricket coaching programs at Crics 22Yards Columbus Ohio"
+              className="programs-image"
+            />
           </div>
         </div>
       </div>
