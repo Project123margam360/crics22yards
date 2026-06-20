@@ -6,31 +6,43 @@ export default function WhyJoinUsSection() {
   return (
     <section className="why-join-us-section">
       <div className="why-join-us-container">
-        {/* Left Column - Image */}
         <div className="why-join-us-left">
           <div className="why-join-us-image">
-            <img src={coachImage} alt="Coach training young cricket player" />
+            <img
+              src={coachImage}
+              alt="Cricket coach training young player at Crics 22Yards Columbus Ohio"
+            />
           </div>
         </div>
 
-        {/* Right Column - Content */}
         <div className="why-join-us-right">
-          <h2 className="why-join-heading">Why You Should Join Us</h2>
-          <h3 className="why-join-subheading">What We Offer</h3>
+          <h2 className="why-join-heading">
+            Why Join Crics 22Yards Columbus?
+          </h2>
+
+          <h3 className="why-join-subheading">
+            Cricket Coaching, Indoor Nets & Player Development
+          </h3>
+
           <p className="why-join-description">
-            Here at Crics 22Yards Columbus, we believe that everyone has the potential to excel in cricket. Our training programs are designed to boost your physical fitness, enhance your understanding of the game, and build important life skills like teamwork and discipline.
+            Crics 22Yards Columbus helps players of all ages improve through
+            professional cricket coaching, indoor cricket nets, structured
+            training programs, fitness development, and a supportive cricket
+            community in Plain City, Ohio.
           </p>
 
-          {/* Features Grid */}
           <div className="why-join-features">
             <div className="feature-box">
               <h4 className="feature-title">
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 8L18 14L8 20" stroke="#00529C" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                Tailored Training for All
+                Training for All Skill Levels
               </h4>
-              <p className="feature-text">Our programs adapt to suit your skill level, from beginners to advanced players, ensuring personalized progress.</p>
+              <p className="feature-text">
+                Programs for beginners, youth players, intermediate cricketers,
+                and advanced athletes.
+              </p>
             </div>
 
             <div className="feature-box">
@@ -38,9 +50,12 @@ export default function WhyJoinUsSection() {
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 8L18 14L8 20" stroke="#00529C" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                A Welcoming Atmosphere
+                Supportive Cricket Community
               </h4>
-              <p className="feature-text">We provide personalized coaching in a supportive environment, focusing on individual growth and a sense of community.</p>
+              <p className="feature-text">
+                A positive environment where players build confidence,
+                discipline, teamwork, and love for cricket.
+              </p>
             </div>
 
             <div className="feature-box">
@@ -48,9 +63,12 @@ export default function WhyJoinUsSection() {
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 8L18 14L8 20" stroke="#00529C" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                Advanced Training Technology
+                Advanced Indoor Training Facility
               </h4>
-              <p className="feature-text">Utilize cutting-edge technology for precise analytics and feedback, enhancing both understanding and performance.</p>
+              <p className="feature-text">
+                Indoor cricket nets, bowling machines, coaching tools, and
+                year-round practice opportunities.
+              </p>
             </div>
 
             <div className="feature-box">
@@ -58,9 +76,12 @@ export default function WhyJoinUsSection() {
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 8L18 14L8 20" stroke="#00529C" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                Comprehensive Skill Development
+                Complete Skill Development
               </h4>
-              <p className="feature-text">Our training covers technical, physical, and mental aspects of cricket, preparing players for all levels of competition.</p>
+              <p className="feature-text">
+                Coaching covers batting, bowling, fielding, fitness, game
+                awareness, match preparation, and mental strength.
+              </p>
             </div>
           </div>
         </div>
