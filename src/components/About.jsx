@@ -9,18 +9,24 @@ export default function About() {
       <div className="about-container">
         {/* Left Column */}
         <div className="about-left">
-          <h1 className="about-heading">About Us</h1>
-          <h2 className="about-subheading">Who We Are</h2>
+          <h2 className="about-heading">About Crics 22Yards Columbus</h2>
+          <h3 className="about-subheading">Who We Are</h3>
+
           <p className="about-description">
-            Established in 2026, Crics 22Yards Columbus is a cutting-edge cricket academy focused on nurturing talent with top-tier coaching and advanced training facilities. Our mission is to foster skilled, confident players ready to compete internationally.
+            Established in 2026, Crics 22Yards Columbus is a premier indoor cricket academy in Plain City, Ohio, dedicated to developing young cricketers through professional coaching, advanced training programs, indoor cricket nets, and year-round player development opportunities.
           </p>
+
           <div className="about-accent-line"></div>
         </div>
 
         {/* Center Column - Image */}
         <div className="about-center">
           <div className="about-image-frame">
-            <img src={cricketField} alt="Cricket Field" className="about-image" />
+            <img
+              src={cricketField}
+              alt="Indoor cricket training facility at Crics 22Yards Columbus Ohio"
+              className="about-image"
+            />
           </div>
         </div>
 
@@ -35,14 +41,17 @@ export default function About() {
 
           <div className="about-content">
             <p>
-              At Crics 22Yards Columbus, we believe that cricket is more than a game—it's a journey that teaches invaluable life lessons. Our approach is centered around fostering a supportive environment where young athletes can grow both personally and professionally.
+              At Crics 22Yards Columbus, we believe cricket is more than a sport. Our academy provides a supportive environment where players of all ages can improve their skills, build confidence, and compete at higher levels through structured coaching and competitive training.
             </p>
+
             <p>
-              We are committed to delivering a holistic cricketing experience through high-quality coaching, advanced facilities, and a vibrant community atmosphere.
+              Serving players from Columbus, Plain City, Dublin, Hilliard, Powell, Marysville, and surrounding Ohio communities, we offer high-quality coaching, indoor lane rentals, summer camps, youth development programs, and special cricket events.
             </p>
           </div>
 
-          <Link to="/about" className="about-button">More About Us</Link>
+          <Link to="/about" className="about-button">
+            More About Us
+          </Link>
         </div>
       </div>
     </section>
