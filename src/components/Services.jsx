@@ -2,26 +2,56 @@ import React from 'react';
 import '../styles/Services.css';
 import facilityImage from '../assets/10031.webp';
 
+const LANE_BOOKING_URL = 'https://axon22yards.com/book/columbus';
+const COACHING_URL = 'https://www.crics22yards.com/coaching';
+
 export default function Services() {
   const handleBookLane = () => {
-    document.getElementById('rentals')?.scrollIntoView({ behavior: 'smooth' });
+    window.location.href = LANE_BOOKING_URL;
   };
 
   const handleEnrollCoaching = () => {
-    document.getElementById('coaching')?.scrollIntoView({ behavior: 'smooth' });
+    window.location.href = COACHING_URL;
   };
 
   return (
-    <section id="events" className="services-section" style={{ backgroundImage: `url(${facilityImage})` }}>
+    <section
+      id="events"
+      className="services-section"
+      style={{ backgroundImage: `url(${facilityImage})` }}
+    >
       <div className="services-overlay"></div>
+
       <div className="services-content">
-        <h2>Start Your Cricket Journey with Crics 22Yards Columbus</h2>
+        <h2>
+          Cricket Coaching, Indoor Lane Rentals & Summer Camps in Columbus, OH
+        </h2>
+
         <p>
-          Whether you're looking to refine your skills in a professional setting or seeking expert guidance to take your game to the next level, Crics 22Yards Columbus has you covered. Choose from our tailored options to best suit your cricketing needs.
+          Join one of Ohio's leading indoor cricket facilities. Whether you're
+          looking for professional cricket coaching, indoor cricket lane rentals,
+          youth development programs, summer camps, batting practice, bowling
+          training, or recreational cricket activities, Crics 22Yards Columbus
+          provides the ideal environment to train, improve, and enjoy the game
+          year-round.
         </p>
+
         <div className="services-buttons">
-          <button className="btn btn-primary" onClick={handleBookLane}>BOOK A LANE +</button>
-          <button className="btn btn-secondary" onClick={handleEnrollCoaching}>ENROLL FOR COACHING 📋</button>
+          <button
+            className="btn btn-primary"
+            onClick={handleBookLane}
+            aria-label="Book an indoor cricket lane at Crics 22Yards Columbus"
+          >
+            BOOK A LANE +
+          </button>
+
+          <button
+            className="btn btn-secondary"
+            onClick={handleEnrollCoaching}
+            aria-label="Enroll for cricket coaching at Crics 22Yards Columbus"
+          >
+            ENROLL FOR COACHING 📋
+          </button>
         </div>
       </div>
     </section>
