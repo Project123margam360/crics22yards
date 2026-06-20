@@ -6,43 +6,54 @@ export default function CoachingFAQSection() {
 
   const faqs = [
     {
-      question: 'What types of coaching programs are available at Crics 22Yards Columbus?',
-      answer: 'At Crics 22Yards Columbus, we offer a variety of coaching programs tailored to different skill levels and age groups, including:\n• Beginner Programs: Focus on introducing the fundamentals of cricket.\n• Intermediate Programs: Designed to refine skills and introduce more complex aspects of the game.\n• Advanced Programs: Target those preparing for competitive play with high-intensity training.\n• Personalized Coaching: One-on-one sessions that focus on specific areas of improvement.'
+      question: 'What types of cricket coaching programs are available at Crics 22Yards Columbus?',
+      answer:
+        'At Crics 22Yards Columbus, we offer professional cricket coaching programs for kids, youth players, beginners, intermediate cricketers, and advanced athletes. Our programs focus on batting, bowling, fielding, fitness, game awareness, and long-term player development.'
     },
     {
       question: 'How long does each coaching program last?',
-      answer: 'Our standard coaching programs are structured as estimated 12-week courses. However, we also offer flexible scheduling to accommodate the needs of our players, including shorter clinics and extended training options.'
+      answer:
+        'Our standard cricket coaching programs are structured as estimated 12-week courses. We also offer flexible training schedules, shorter clinics, private coaching options, and extended player development programs based on each player’s goals.'
     },
     {
       question: 'What qualifications do your coaches have?',
-      answer: 'Our coaching team is made up of experienced and certified cricket professionals, many of whom have played at competitive levels, including national and international arenas. They undergo regular training to stay updated with the latest coaching techniques and safety protocols'
+      answer:
+        'Our coaching team includes experienced and certified cricket professionals with competitive playing and coaching backgrounds. They focus on modern coaching methods, player safety, skill development, and structured cricket training.'
     },
     {
       question: 'Do you offer trial sessions for new students?',
-      answer: 'Yes, we offer trial sessions for new students so they can experience our coaching style and facilities before committing to a full program. These sessions are a great way to ensure our academy is the right fit for your cricket goals.'
+      answer:
+        'Yes, we offer trial sessions for new students so players and parents can experience our coaching style, indoor cricket facility, and training environment before joining a full program.'
     },
     {
-      question: 'What equipment do I need to bring to training sessions?',
-      answer: 'Beginners are advised to wear comfortable athletic clothing and bring a water bottle. For safety, we provide all necessary cricket equipment, including bats, balls, and protective gear, during introductory sessions. As players advance, they may choose to purchase their own equipment from our on-site pro shop.'
+      question: 'What equipment do I need to bring to cricket training sessions?',
+      answer:
+        'Beginners should wear comfortable athletic clothing and bring a water bottle. For introductory sessions, basic cricket equipment may be provided. As players progress, they may choose to bring or purchase their own bat, protective gear, gloves, pads, and cricket accessories.'
     },
     {
       question: 'Can parents watch their children during coaching sessions?',
-      answer: 'Absolutely! We have designated viewing areas where parents can comfortably watch their children participate in the sessions. We believe in transparency and encourage parents to be involved in their child’s cricket development.'
+      answer:
+        'Yes, parents can watch their children during coaching sessions from designated viewing areas. We encourage parents to stay involved in their child’s cricket development journey.'
     },
     {
       question: 'How are players assessed and moved to higher levels?',
-      answer: 'Players are regularly assessed through both formal evaluations and ongoing observation during sessions. Advancements to higher levels are based on skill mastery, understanding of game tactics, and readiness to tackle more challenging aspects of cricket.'
+      answer:
+        'Players are assessed through coaching observations, skill evaluations, performance tracking, match awareness, fitness, and overall readiness. Advancement depends on skill mastery, consistency, attitude, and ability to handle more challenging cricket training.'
     },
-    { 
-      question: 'Are there opportunities for competitive play at Crics 22Yards Columbus?',
-      answer: 'Yes, we offer various competitive opportunities, including internal league matches, local tournaments, and inter-academy competitions. These events are designed to give players practical experience and exposure to competitive cricket.'
+    {
+      question: 'Are there opportunities for competitive cricket?',
+      answer:
+        'Yes, Crics 22Yards Columbus provides competitive opportunities through internal matches, local tournaments, inter-academy games, and structured match practice to help players gain real-game experience.'
     },
     {
       question: 'What makes Crics 22Yards Columbus different from other cricket academies?',
-      answer: 'Crics 22Yards Columbus stands out due to our comprehensive approach that integrates state-of-the-art training facilities, expert coaching staff, and a holistic training methodology that focuses on technical skills, mental strength, and strategic understanding of the game.'},
-      {
+      answer:
+        'Crics 22Yards Columbus combines professional cricket coaching, indoor cricket nets, advanced training facilities, structured player development, fitness support, and a positive learning environment for players from Columbus, Plain City, Dublin, Hilliard, Powell, Marysville, and nearby Ohio communities.'
+    },
+    {
       question: 'Is financial aid or scholarship available for talented players?',
-      answer: 'We are committed to making cricket accessible to all. Financial aid and scholarships may be available for talented players facing financial barriers. Please contact our administration for more information about eligibility and application procedures.'
+      answer:
+        'Financial aid or scholarship support may be available for talented players facing financial barriers. Please contact the Crics 22Yards Columbus administration team for eligibility details and application information.'
     }
   ];
 
@@ -53,20 +64,32 @@ export default function CoachingFAQSection() {
   return (
     <section className="coaching-faq-section">
       <div className="coaching-faq-container">
-        <h2 className="coaching-faq-heading">Got Questions? We have answers</h2>
-        <h3 className="coaching-faq-subtitle">Frequently Asked Questions</h3>
+        <h2 className="coaching-faq-heading">Cricket Coaching FAQs</h2>
+
+        <h3 className="coaching-faq-subtitle">
+          Frequently Asked Questions About Our Cricket Coaching Programs
+        </h3>
+
         <p className="coaching-faq-description">
-          Transform your celebrations and team-building events into unforgettable experiences at Crics 22Yards Columbus. Our facility provides a unique setting that combines sport and fun, making every event memorable. Here's what we offer:
+          Learn more about cricket coaching, player development programs,
+          training schedules, coaching qualifications, cricket lessons, and
+          youth cricket opportunities at Crics 22Yards Columbus. Below are
+          answers to some of the most common questions parents and players ask
+          before joining our academy.
         </p>
 
         <div className="coaching-faq-list">
           {faqs.map((faq, index) => (
             <div key={index} className="coaching-faq-item">
               <button
-                className={`coaching-faq-question ${expandedIndex === index ? 'active' : ''}`}
+                className={`coaching-faq-question ${
+                  expandedIndex === index ? 'active' : ''
+                }`}
                 onClick={() => toggleExpand(index)}
+                aria-expanded={expandedIndex === index}
               >
                 <span>{faq.question}</span>
+
                 <svg
                   width="20"
                   height="20"
@@ -84,11 +107,10 @@ export default function CoachingFAQSection() {
                   />
                 </svg>
               </button>
+
               {expandedIndex === index && faq.answer && (
                 <div className="coaching-faq-answer">
-                  {faq.answer.split('\n').map((line, i) => (
-                    <p key={i}>{line}</p>
-                  ))}
+                  <p>{faq.answer}</p>
                 </div>
               )}
             </div>
