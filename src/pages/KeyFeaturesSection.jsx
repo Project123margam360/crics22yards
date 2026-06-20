@@ -8,34 +8,48 @@ import feature3 from '../assets/10010.webp';
 export default function KeyFeaturesSection() {
   const features = [
     {
-      title: 'Smart Lane Technology',
-      description: 'Utilize our state-of-the-art smart lane setup, providing instant feedback and detailed analytics to improve your game.',
+      title: 'Advanced Indoor Cricket Training Technology',
+      description:
+        'Train using modern cricket technology, performance tracking tools, bowling machines, and structured coaching methods designed to accelerate player development and improve match performance.',
       image: feature1
     },
     {
-      title: 'Certified Coaches',
-      description: 'Learn from some of the best in the field. Our coaches bring years of professional experience and a passion for mentoring young players.',
+      title: 'Experienced & Certified Cricket Coaches',
+      description:
+        'Learn from qualified coaches with extensive playing and coaching experience. Our coaching team focuses on technical development, game awareness, confidence building, and long-term player growth.',
       image: feature2
     },
     {
-      title: 'Flexible Scheduling',
-      description: 'We offer various time slots throughout the week to accommodate your busy schedule.',
+      title: 'Flexible Coaching Schedules',
+      description:
+        'Choose from multiple coaching sessions and training schedules designed to fit school, work, and family commitments while maintaining consistent player development.',
       image: feature3
     }
   ];
 
   return (
-    <section className="key-features-section" style={{ backgroundImage: `url(${bgImage})` }}>
+    <section
+      className="key-features-section"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
       <div className="key-features-container">
-        <h2 className="key-features-title">Key Features Of Our Coaching</h2>
+        <h2 className="key-features-title">
+          Why Choose Our Cricket Coaching Programs?
+        </h2>
+
         <p className="key-features-description">
-          At Crics 22Yards Columbus, our cricket coaching programs are renowned for their comprehensive approach and quality, tailored to enhance every player's game regardless of their skill level. Here are some standout features
+          Crics 22Yards Columbus provides one of the most comprehensive cricket coaching experiences in Ohio. Our programs are designed for kids, youth players, beginners, intermediate cricketers, and advanced athletes looking to improve batting, bowling, fielding, fitness, and overall match performance.
         </p>
 
         <div className="key-features-grid">
           {features.map((feature, index) => (
-            <div key={index} className="key-feature-card" style={{ '--bg-image': `url(${feature.image})` }}>
+            <div
+              key={index}
+              className="key-feature-card"
+              style={{ '--bg-image': `url(${feature.image})` }}
+            >
               <div className="key-feature-overlay"></div>
+
               <div className="key-feature-content">
                 <h3 className="key-feature-title">{feature.title}</h3>
                 <p className="key-feature-text">{feature.description}</p>
