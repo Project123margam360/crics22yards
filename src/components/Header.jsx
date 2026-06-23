@@ -131,10 +131,12 @@ export default function Header() {
                 </svg>
                 Membership
               </a>
-                  <a
+
+              <a
                 href="https://axon22yards.com/join?location=columbus"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="drop-menu-academy"
               >
                 <svg
                   width="15"

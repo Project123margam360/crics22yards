@@ -65,7 +65,15 @@
   color: #ffffff;
 }
 
+.hero-cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
 .cta-button {
+  display: inline-block;
   background: #D7AF43;
   color: #131416;
   border: none;
@@ -76,6 +84,7 @@
   letter-spacing: 0.5px;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
@@ -148,5 +157,10 @@
   .cta-button {
     padding: 12px 28px;
     font-size: 14px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    gap: 12px;
   }
 }

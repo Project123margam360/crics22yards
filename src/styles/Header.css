@@ -178,6 +178,10 @@
   background: #f5f5f5;
 }
 
+.drop-menu a.drop-menu-academy {
+  font-size: 12px;
+}
+
 .drop-menu a svg {
   flex-shrink: 0;
   width: 20px;

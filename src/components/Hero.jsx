@@ -2,13 +2,7 @@ import React from 'react';
 import '../styles/Hero.css';
 import facilityImage from '../assets/10021.jpeg';
 
-const laneRentalBookingUrl = 'https://axon22yards.com/book/columbus';
-
 export default function Hero() {
-  const handleBookLane = () => {
-    window.location.href = laneRentalBookingUrl;
-  };
-
   return (
     <section
       id="home"
@@ -27,13 +21,37 @@ export default function Hero() {
           Train, play, and book indoor cricket lanes at Crics 22Yards in Plain City, OH — serving Columbus, Dublin, Hilliard, Powell, Marysville, and nearby areas.
         </p>
 
-        <button
-          className="cta-button"
-          onClick={handleBookLane}
-          aria-label="Book an indoor cricket rental lane at Crics 22Yards Columbus"
-        >
-          Book a Rental Lane
-        </button>
+        <div className="hero-cta-group">
+          <a
+            href="https://axon22yards.com/book/columbus"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button cta-button-left"
+            aria-label="Book an indoor cricket rental lane at Crics 22Yards Columbus"
+          >
+            Lane Rentals
+          </a>
+
+          <a
+            href="https://axon22yards.com/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button cta-button-middle"
+            aria-label="Crics 22Yards Columbus membership login"
+          >
+            Membership
+          </a>
+
+          <a
+            href="https://axon22yards.com/join?location=columbus"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button cta-button-right"
+            aria-label="Join Super Kings Academy at Crics 22Yards Columbus"
+          >
+            Super Kings Academy
+          </a>
+        </div>
       </div>
     </section>
   );
