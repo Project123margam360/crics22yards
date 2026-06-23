@@ -131,6 +131,27 @@ export default function Header() {
                 </svg>
                 Membership
               </a>
+                  <a
+                href="https://axon22yards.com/join?location=columbus"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 1l1.6 3.6L12 5l-2.5 2.7L10 12 7 9.8 4 12l.5-4.3L2 5l3.4-.4z"
+                    stroke="currentColor"
+                    strokeWidth="1.2"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                Super Kings Academy
+              </a>
             </div>
           )}
         </div>
