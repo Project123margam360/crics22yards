@@ -29,7 +29,7 @@ export default function Hero() {
             className="cta-button cta-button-left"
             aria-label="Book an indoor cricket rental lane at Crics 22Yards Columbus"
           >
-            Lane Rentals
+            Book Lane/Box as guest 
           </a>
 
           <a
@@ -39,7 +39,7 @@ export default function Hero() {
             className="cta-button cta-button-middle"
             aria-label="Crics 22Yards Columbus membership login"
           >
-            Membership
+            Lane/Box - See plans
           </a>
 
           <a
