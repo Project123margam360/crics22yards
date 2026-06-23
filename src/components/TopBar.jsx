@@ -35,9 +35,9 @@ export default function TopBar() {
           </div>
         </div>
         <div className="topbar-phone">
-          < a href="tel:+17134982155">
-          <i class="fa-solid fa-phone"></i> </a>
-          <a href="tel:+17134982155">(713) 498 2155</a>
+          <a href="tel:+16149841453">
+          <i className="fa-solid fa-phone"></i> </a>
+          <a href="tel:+16149841453">+1 614-984-1453</a>
         </div>
       </div>
     </div>
