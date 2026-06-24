@@ -99,47 +99,27 @@
 
 @media (max-width: 768px) {
   .topbar {
-    padding: 10px 16px;
+    padding: 6px 12px;
   }
 
   .topbar-container {
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 12px;
   }
 
   .topbar-info {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 12px;
+    width: auto;
   }
 
   .topbar-item {
-    font-size: 11px;
-  }
-
-  .topbar-phone {
-    width: 100%;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .topbar {
-    padding: 8px 12px;
-  }
-
-  .topbar-container {
-    gap: 8px;
-  }
-
-  .topbar-info {
-    gap: 8px;
-  }
-
-  .topbar-item {
-    font-size: 10px;
-    gap: 4px;
+    font-size: 10.5px;
+    gap: 5px;
   }
 
   .topbar-icon {
@@ -148,11 +128,50 @@
   }
 
   .topbar-phone {
-    font-size: 11px;
+    width: auto;
+    font-size: 10.5px;
+    gap: 5px;
+  }
+
+  .topbar-phone a {
+    font-size: 10.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 5px 10px;
+  }
+
+  .topbar-container {
+    gap: 3px 8px;
+  }
+
+  .topbar-info {
+    gap: 3px 8px;
+  }
+
+  .topbar-item {
+    font-size: 9.5px;
+    gap: 4px;
+  }
+
+  .topbar-icon {
+    width: 11px;
+    height: 11px;
+  }
+
+  .topbar-phone {
+    font-size: 9.5px;
+    gap: 4px;
+  }
+
+  .topbar-phone a {
+    font-size: 9.5px;
   }
 
   .topbar-phone .topbar-icon {
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
   }
 }
