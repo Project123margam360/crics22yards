@@ -204,6 +204,7 @@
 
   .navbar {
     gap: 12px;
+    padding: 0;
   }
 
   .nav-links {
