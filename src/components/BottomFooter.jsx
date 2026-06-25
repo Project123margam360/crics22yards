@@ -45,7 +45,7 @@ export default function BottomFooter() {
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/coaching">Coaching</Link></li>
               <li><Link to="/lane-rentals">Lane Rentals</Link></li>
-              <li><Link to="/summer-camp">Summer Camp</Link></li>
+              <li><a href="https://axon22yards.com/plans/3b540ed3-67c0-466f-9f0a-8b6a51de470d" target="_blank" rel="noopener noreferrer">Summer Camp</a></li>
               <li><a href="#special-events">Special Events</a></li>
               <li><a href="#gallery">Gallery</a></li>
               <li><Link to="/contact-us">Contact Us</Link></li>

@@ -38,7 +38,7 @@ export default function Header() {
           <Link to="/coaching" onClick={closeMobileMenu}>Coaching</Link>
           <Link to="/lane-rentals" onClick={closeMobileMenu}>Lane Rentals</Link>
           <Link to="/special-events" onClick={closeMobileMenu}>Special Events</Link>
-          <Link to="/summer-camp" onClick={closeMobileMenu}>Summer Camp</Link>
+          <a href="https://axon22yards.com/plans/3b540ed3-67c0-466f-9f0a-8b6a51de470d" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>Summer Camp</a>
           <Link to="/contact-us" onClick={closeMobileMenu}>Contact Us</Link>
           <Link to="/registration" onClick={closeMobileMenu}>Registration</Link>
         </div>
