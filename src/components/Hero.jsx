@@ -1,15 +1,25 @@
 import React from 'react';
 import '../styles/Hero.css';
-import facilityImage from '../assets/10021.jpeg';
+
+const heroVideoId = 'Um4rOKDtYIk';
 
 export default function Hero() {
   return (
     <section
       id="home"
       className="hero-section"
-      style={{ backgroundImage: `url(${facilityImage})` }}
       aria-label="Crics 22Yards indoor cricket facility in Columbus Ohio"
     >
+      <div className="hero-video-background">
+        <iframe
+          src={`https://www.youtube.com/embed/${heroVideoId}?autoplay=1&mute=1&loop=1&playlist=${heroVideoId}&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&disablekb=1`}
+          title="Crics 22Yards indoor cricket facility video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        ></iframe>
+      </div>
+
       <div className="hero-content">
         <div className="badge">Welcome to Crics 22Yards Columbus</div>
 
