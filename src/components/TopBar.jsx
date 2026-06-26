@@ -38,6 +38,8 @@ export default function TopBar() {
           <a href="tel:+16149841453">
           <i className="fa-solid fa-phone"></i> </a>
           <a href="tel:+16149841453">+1 614-984-1453</a>
+          <span className="topbar-phone-separator">|</span>
+          <a href="tel:+17134982155">(713) 498 2155</a>
         </div>
       </div>
     </div>

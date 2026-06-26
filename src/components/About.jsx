@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
-import cricketField from '../assets/10008.webp';
+import cricketField from '../assets/22Yards Columbus Cricket Training.jpeg';
 
 export default function About() {
   return (
@@ -24,7 +24,7 @@ export default function About() {
           <div className="about-image-frame">
             <img
               src={cricketField}
-              alt="Indoor cricket training facility at Crics 22Yards Columbus Ohio"
+              alt="22Yards Columbus Cricket Training"
               className="about-image"
             />
           </div>
