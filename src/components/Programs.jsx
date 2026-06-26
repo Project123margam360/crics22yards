@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../styles/Programs.css';
-import programImage from '../assets/10010.webp';
+import programImage from '../assets/22Yards Columbus Cricket Training 2.jpeg';
 
 export default function Programs() {
   const [animate, setAnimate] = useState(false);

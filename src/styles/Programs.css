@@ -27,7 +27,7 @@
 }
 
 .programs-subtitle {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: #D7AF43;
   text-transform: uppercase;
@@ -36,7 +36,7 @@
 }
 
 .programs-title {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 700;
   color: #131416;
   margin-bottom: 25px;
@@ -46,7 +46,7 @@
 }
 
 .programs-description {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   color: #656A74;
   line-height: 1.8;
@@ -74,14 +74,14 @@
 }
 
 .program-name {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #131416;
   margin: 0 0 8px 0;
 }
 
 .program-text {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   color: #656A74;
   line-height: 1.7;
@@ -104,18 +104,19 @@
 .programs-image-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 1;
-  background: #00529C;
-  padding: 15px;
+  height: auto;
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .programs-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 @media (max-width: 1024px) {
